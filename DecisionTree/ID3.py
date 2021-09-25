@@ -141,18 +141,27 @@ class ID3Tree(object):
         return (matching, label)
 
 
-    def commonAttribute(self,attr):
-        attr_index=self.attributes.index(attr)
-        attribute_values=self.getAttribute(attr)
-        attr_count=[0 for x in range(0,len(attribute_values))]
-        for x in self.data:
-            idx=0
-            for attr_val in attribute_values:
-                if x[attr_index]==attr_val:
-                    attr_count[idx]+=1
-                idx+=1
+    def commonAttribute(self,attribute):
+        index = self.attributes.index(attribute)
+        attributeV = self.getAttribute(attribute)
+        countA = [0 for x in range(0,len(attributeV))]
 
-        return attribute_values[max_index]
+        for x in self.data:
+            count = 0
+            for attr_val in attributeV:
+                if x[index] == attr_val:
+                    countA[count] +=1
+                count += 1
+
+        maxVal = max(countA)
+        _index=countA.index(maxVal)
+
+        if attributeV[_index]=='unknown':
+            countA.remove(maxVal)
+            maxVal = max(countA)
+            _index = countA.index(maxVal)
+
+        return attributeV[_index]
 
 
     def bestSplit(self):
@@ -200,6 +209,8 @@ class ID3Tree(object):
 
 
     def entropy(self, data):
+        length = len(data)
+
         if args.ME:
             ME = 0
 
@@ -223,12 +234,12 @@ class ID3Tree(object):
             return GI
 
         entropy = 0
-        if dataLength == 0:
+        if length == 0:
             return entropy
 
         for x in self.labels:
 
-            p=self.labelCount(x,data) / float(dataLength)
+            p=self.labelCount(x,data) / float(length)
             if p!= 0:
                 entropy-=p*math.log(p,2)
 
@@ -267,7 +278,7 @@ class ID3Tree(object):
 
                 else:
                     if args.missing:
-                        commonAttribute = self.commonAttribute(attr)
+                        commonAttribute = self.commonAttribute(i)
                         commonAttributes.append(commonAttribute)
 
                         for j in self.data:
