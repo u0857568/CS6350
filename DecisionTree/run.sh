@@ -54,3 +54,6 @@ python id3.py -train bank/train.csv -test bank/test.csv -bank -depth 4 -GI -miss
 python id3.py -train bank/train.csv -test bank/test.csv -bank -depth 8 -GI -missing
 python id3.py -train bank/train.csv -test bank/test.csv -bank -depth 12 -GI -missing
 python id3.py -train bank/train.csv -test bank/test.csv -bank -depth 16 -GI -missing
+
+
+python adaboost.py -train bank/train.csv -test bank/test.csv -bank -depth 1 -T 5

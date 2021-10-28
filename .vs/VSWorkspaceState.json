@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DecisionTree",
-    "\\DecisionTree\\bank"
+    "\\Adaboost",
+    "\\EnsembleLearning",
+    "\\LinearRegression"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\EnsembleLearning\\test.py",
   "PreviewInSolutionExplorer": false
 }
