@@ -37,7 +37,6 @@ with open("2b.csv", 'w') as f:
 print("check data in 2b.csv")
 
 test_predictions = PerceptronMain.predict_VotedPerceptron(x_test, wghts)
-# if prediction is different, difference will be +-2, if same, will be 0
 numWrong = sum(abs(test_predictions-y_test) / 2)
 print(f"Test Error after {T} epochs: {numWrong/len(y_test)}")
 
