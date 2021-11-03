@@ -13,3 +13,5 @@
 # "python randomforests.py"
 # To use linear regression,
 # "python gradients.py"
+# To use percaptron,
+# "python perceptron.py"
