@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\DecisionTree",
-    "\\EnsembleLearning",
-    "\\LinearRegression",
-    "\\LinearRegression\\concrete"
+    "\\LinearRegression\\concrete",
+    "\\Perceptron"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Perceptron\\PerceptronMain.py",
   "PreviewInSolutionExplorer": false
 }

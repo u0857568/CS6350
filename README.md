@@ -15,3 +15,5 @@
 # "python gradients.py"
 # To use percaptron,
 # "python perceptron.py"
+# To use SVM,
+# "python run_SVM.py"
