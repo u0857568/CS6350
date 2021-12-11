@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DecisionTree",
-    "\\LinearRegression\\concrete",
-    "\\Perceptron"
+    "\\LogisticRegression",
+    "\\NeuralNetworks",
+    "\\SVM"
   ],
-  "SelectedNode": "\\Perceptron\\PerceptronMain.py",
+  "SelectedNode": "\\NeuralNetworks\\bank-note",
   "PreviewInSolutionExplorer": false
 }
