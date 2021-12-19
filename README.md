@@ -28,3 +28,6 @@
 # To use logistic regression,
 # "python lr.py"
 # 
+# To run the final project
+# recommand to run "Final.ipynb" in jupyter notebook
+# or "python Final.ipynb"(strongly recommand jupyter notebook!)

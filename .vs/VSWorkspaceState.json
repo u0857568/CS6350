@@ -3,8 +3,9 @@
     "",
     "\\LogisticRegression",
     "\\NeuralNetworks",
+    "\\Perceptron",
     "\\SVM"
   ],
-  "SelectedNode": "\\NeuralNetworks\\bank-note",
+  "SelectedNode": "\\NeuralNetworks\\PyTorch.py",
   "PreviewInSolutionExplorer": false
 }
