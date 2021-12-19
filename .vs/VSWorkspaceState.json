@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LogisticRegression",
-    "\\NeuralNetworks",
-    "\\Perceptron",
-    "\\SVM"
+    "\\FinalProject",
+    "\\FinalProject\\.ipynb_checkpoints"
   ],
-  "SelectedNode": "\\NeuralNetworks\\PyTorch.py",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
